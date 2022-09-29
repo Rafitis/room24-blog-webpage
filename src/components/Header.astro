@@ -2,6 +2,8 @@
 import HeaderLink from './HeaderLink.astro';
 import { HOMEPAGE_URL } from '../config';
 import { IoLogoGithub } from 'react-icons/io5/index.js';
+import ThemeToggle from './ThemeToggleButton';
+
 import Room24Icon from './icons/Room24Icon';
 ---
 
@@ -18,6 +20,7 @@ import Room24Icon from './icons/Room24Icon';
 				<HeaderLink href="https://github.com/Rafitis" target="_blank"><IoLogoGithub />Source</HeaderLink>
 			</div>
 			<div class="flex-1"></div>
+			<ThemeToggle client:load />
 		</nav>
 	</div>
 </header>
